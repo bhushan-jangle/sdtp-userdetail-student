@@ -13,7 +13,7 @@ mongoose.connect('mongodb://userdetail:userdetail@ds125469.mlab.com:25469/userde
 
 var app = express();
 var index = require('./routes/index');
-app.use('/studentpdetail', index);
+app.use('/api', index);
 
 // view engine setup
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
